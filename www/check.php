@@ -1,43 +1,27 @@
 <?php 
 	//print_r($_POST);
 	
-	// Name
 	
-	if ($_POST["name"] == "")  {
+	
+	if ($_POST["name"] == "")  {				// Name
 		echo "Please write name." . "<br/>";
 		echo "<a href='/'>Write name</a>" . "<br/>";
-	} else {
-		header("Location:accaunt.html");
-	}
-
-	//Surname
-
-	if ($_POST["surname"] == "") {
+	} else if ($_POST["surname"] == "") {		//Surname
 		echo "Please write Surname" . "<br/>";
 		echo "<a href='/'>Write surname</a>" . "<br/>";
-	} else {
-		header("Location:accaunt.html");
 	}
-
-	//Email
-
-	if ($_POST["email"] == "") {
+	else if ($_POST["email"] == "") {			//Email
 		echo "Please write Email". "<br/>";
 		echo "<a href='/'>Write Email</a>". "<br/>";
-	} else {
-		header("Location:accaunt.html");
+	}
+	else if ($_POST["text"] == "") {			//Message
+		echo "Please write message" . "<br/>";
+		echo "<a href='/'>Write message</a>" . "<br/>";
 	}
 
-	//Password
-
-	if ($_POST["surname"] == "") {
-		echo "Please write password" . "<br/>";
-		echo "<a href='/'>Write password</a>" . "<br/>";
-	} else {
-		header("Location:accaunt.html");
+	else	{
+		header("Location:accaunt.php");
 	}
 	
-
-
 
  ?>
